@@ -1,21 +1,26 @@
 {
-  "name": "gulp-tinypng-extended",
-  "version": "3.0.3",
+  "name": "gulp-tinypng-extended-pro",
+  "version": "0.0.1",
   "description": "TinyPNG API wrapper for compressing PNG & JPG images",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nymo/gulp-tinypng-extended.git"
+    "url": "https://github.com/aaronlam/gulp-tinypng-extended-pro"
   },
   "scripts": {
     "test": "mocha"
   },
   "author": {
-    "name": "Gregor Panek",
-    "email": "gp@gregorpanek.de",
-    "url": "https://github.com/nymo"
+    "name": "Aaronlam",
+    "email": "a@aaronlam.xyz",
+    "url": "https://github.com/aaronlam"
   },
   "contributors": [
+    {
+      "name": "Gregor Panek",
+      "email": "gp@gregorpanek.de",
+      "url": "https://github.com/nymo"
+    },
     {
       "name": "Stan Hutcheon",
       "email": "stanutcheon@me.com",

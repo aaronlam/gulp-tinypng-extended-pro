@@ -12,7 +12,7 @@ var test = process.env.NODE_ENV == 'test',
     parseArgs = require('minimist')(process.argv.slice(2)),
     log = require('fancy-log');
 
-var PLUGIN_NAME = 'gulp-tinypng-extended';
+var PLUGIN_NAME = 'gulp-tinypng-extended-pro';
 
 /**
  * TinyPNG class
