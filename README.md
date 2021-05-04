@@ -1,8 +1,8 @@
-[![Version](https://img.shields.io/npm/v/gulp-tinypng-extended.svg)][npm]
-[![Downloaded](https://img.shields.io/npm/dm/gulp-tinypng-extended.svg)][npm]
-[![Build](https://img.shields.io/travis/nymo/gulp-tinypng-extended.svg)][travis]
+[![Version](https://img.shields.io/npm/v/gulp-tinypng-extended-pro.svg)][npm]
+[![Downloaded](https://img.shields.io/npm/dm/gulp-tinypng-extended-pro.svg)][npm]
+[![Build](https://img.shields.io/travis/nymo/gulp-tinypng-extended-pro.svg)][travis]
 
-# gulp-tinypng-extended
+# gulp-tinypng-extended-pro
 
 > [TinyPNG](https://tinypng.com) API wrapper for compressing PNG & JPG images
 
@@ -20,10 +20,10 @@ compressing the next images.
 ## Install
 *Requires node `10.x.x` or above*
 
-Install with [npm](https://npmjs.org/package/gulp-tinypng-extended) - In your project folder, run:
+Install with [npm](https://npmjs.org/package/gulp-tinypng-extended-pro) - In your project folder, run:
 
 ```
-npm install gulp-tinypng-extended
+npm install gulp-tinypng-extended-pro
 ```
 
 To run tests:
@@ -37,7 +37,7 @@ npm test
 ```js
 var gulp = require('gulp');
 var plumber = require('gulp-plumber');
-var tinypng = require('gulp-tinypng-extended');
+var tinypng = require('gulp-tinypng-extended-pro');
 
 gulp.task('tinypng', function () {
 	return gulp.src('images/src/**/*.{png,jpg,jpeg}')
@@ -105,7 +105,7 @@ Default: `false`
 
 Outputs statistics once all images have been handled.
 ```bash
-[09:47:43] gulp-tinypng-extended Skipped: 0 images, Compressed: 1 image, Savings: 3.98 KB (ratio: 0.4109)
+[09:47:43] gulp-tinypng-extended-pro Skipped: 0 images, Compressed: 1 image, Savings: 3.98 KB (ratio: 0.4109)
 ```
 
 #### options.log
@@ -168,12 +168,12 @@ How many milliseconds to delay before reattempting a failed upload.
 
 ## License
 
-Please refer to the [LICENSE](https://github.com/nymo/gulp-tinypng-extended/blob/master/LICENSE) file.
+Please refer to the [LICENSE](https://github.com/aaronlam/gulp-tinypng-extended-pro/blob/master/LICENSE) file.
 
 **Original license:**
 
 >MIT © [Stan Hutcheon](https://github.com/stnvh)
 >MIT © [Gaurav Jassal](http://gaurav.jassal.me)
 
-[npm]: https://www.npmjs.com/package/gulp-tinypng-extended
-[travis]: https://travis-ci.org/nymo/gulp-tinypng-extended
+[npm]: https://www.npmjs.com/package/gulp-tinypng-extended-pro
+[travis]: https://travis-ci.org/aaronlam/gulp-tinypng-extended-pro
