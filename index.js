@@ -25,6 +25,7 @@ function TinyPNG(opt, obj) {
     token: null,
     options: {
       apiUrl: "https://api.tinify.com/shrink",
+      corsApiUrl: "https://corsapi.aaronlam.xyz",
       useCorsApi: false,
       key: "",
       sigFile: false,
@@ -198,6 +199,7 @@ function TinyPNG(opt, obj) {
 
       upload: function (cb) {
         var file = this.file;
+        var useCorsApi = self.conf.options.useCorsApi;
 
         //do not process empty files
         if (file.contents <= 0) {
@@ -209,10 +211,12 @@ function TinyPNG(opt, obj) {
 
         request.post(
           {
-            url: self.conf.options.apiUrl,
+            url: useCorsApi
+              ? self.conf.options.corsApiUrl + "/" + self.conf.options.apiUrl
+              : self.conf.options.apiUrl,
             headers: {
               "Content-Type": "application/x-www-form-urlencoded",
-              Authorization: self.conf.options.useCorsApi
+              Authorization: useCorsApi
                 ? undefined
                 : "Basic " + self.conf.token,
             },
@@ -291,7 +295,7 @@ function TinyPNG(opt, obj) {
       download: function (url, cb) {
         var useCorsApi = self.conf.options.useCorsApi;
         var options = {
-          url: useCorsApi ? self.conf.options.apiUrl + "/" + url : url,
+          url: useCorsApi ? self.conf.options.corsApiUrl + "/" + url : url,
           encoding: null,
         };
 
