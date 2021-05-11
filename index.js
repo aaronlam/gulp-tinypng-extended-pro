@@ -160,6 +160,9 @@ function TinyPNG(opt, obj) {
         if (opt.sigFile) {
           // write sigs after complete or but also when error occured in order to keep track of already compressed files
           self.hash.write();
+          self.utils.log(
+            "[writing] " + chalk.green("✔ ") + opt.sigFile + chalk.gray(" (done)")
+          );
         }
         if (opt.summarize) {
           var stats = self.stats,
